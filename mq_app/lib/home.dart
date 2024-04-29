@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mq_app/body.dart';
+import 'package:mq_app/colors.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -8,10 +9,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Title'),
-        backgroundColor: const Color.fromARGB(192, 118, 35, 48),
+        title: const Text(''),
+        backgroundColor: mqred,
       ),
-      body: const Body()
+      body: Container(
+        child: const Body(),
+        color: mqred,
+      )
     );
   }
 }

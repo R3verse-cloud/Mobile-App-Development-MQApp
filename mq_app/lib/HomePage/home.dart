@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mq_app/body.dart';
+import 'package:mq_app/HomePage/body.dart';
 import 'package:mq_app/colors.dart';
 
 class Home extends StatelessWidget {
@@ -8,13 +8,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
-        backgroundColor: mqred,
-      ),
       body: Container(
+        color: mqred[700],
         child: const Body(),
-        color: mqred,
       )
     );
   }

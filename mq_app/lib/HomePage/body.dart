@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mq_app/colors.dart';
+import 'package:mq_app/HomePage/styledHomeCard.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -11,7 +11,7 @@ class Body extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          padding: EdgeInsets.fromLTRB(25, 20, 0, 0),
+          padding: const EdgeInsets.fromLTRB(25, 50, 0, 0),
           child:const Text("Home", style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -19,8 +19,10 @@ class Body extends StatelessWidget {
           ),),
         ),
         Container(
-          padding: EdgeInsets.fromLTRB(25, 0, 0, 0),
-          child: const Text(
+          padding: const EdgeInsets.fromLTRB(25, 0, 0, 0),
+          child: Row(
+            children: [
+              const Text(
             'Welcome, Nader!', 
             textAlign: TextAlign.start,
             style: TextStyle(
@@ -29,7 +31,22 @@ class Body extends StatelessWidget {
               fontSize: 33,
             ),
             ),
-        )
+            const Expanded(child: SizedBox()),
+            CircleAvatar(
+              radius:30,
+              backgroundColor: Colors.black26,
+              child: Image.asset('Assets/Img/Home/ExampleProfilePic.png'),
+            ),
+            const SizedBox(
+              width:10,
+            ),
+            ]
+          )
+        ),
+        Container(
+          child: StyledHomeCard("Order From Cafe", "Assets/Img/Home/ExampleProfilePic.png"),
+        ),
+
       ]
     );
   }

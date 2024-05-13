@@ -43,11 +43,27 @@ class Body extends StatelessWidget {
             ]
           )
         ),
-        Container(
-          child: StyledHomeCard("Order From Cafe", "Assets/Img/Home/ExampleProfilePic.png"),
-        ),
-
-      ]
-    );
+        const Padding(padding: EdgeInsets.symmetric(vertical: 20),),
+        const Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                StyledHomeCard("Order From Cafe", "Assets/Img/Home/CafeSymbol.png"),
+                Padding(padding: EdgeInsets.symmetric(horizontal: 10.0)),
+                StyledHomeCard("Find/Pay for Parking", "Assets/Img/Home/CafeSymbol.png")
+              ],
+            ),
+            Padding(padding: EdgeInsets.symmetric(vertical: 10),),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                StyledHomeCard("Ask.mq", "Assets/Img/Home/Help.png"),
+                Padding(padding: EdgeInsets.symmetric(horizontal: 10),),
+                StyledHomeCard("Library", "Assets/Img/Home/Library.png")
+              ],
+            ),
+          ],),
+    ]);
   }
 }

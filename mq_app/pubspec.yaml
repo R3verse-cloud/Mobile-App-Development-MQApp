@@ -64,7 +64,11 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - Assets/Img/Home/ExampleProfilePic.png
-
+    - Assets/Img/Home/CafeSymbol.png
+    - Assets/Img/Home/ParkingSymbol.png
+    - Assets/Img/Home/Help.png
+    - Assets/Img/Home/Library.png
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
